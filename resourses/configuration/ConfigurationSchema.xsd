@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="configuration" >
+    	<xs:complexType>
+    		<xs:all>
+    			<xs:element name="renderer" type="xs:string" />
+    			<xs:element name="queue1" type="xs:string" />
+    			<xs:element name="queue2" type="xs:string" />
+    			<xs:element name="queue3" type="xs:string" />
+    			<xs:element name="storage" type="xs:string" />
+    			<xs:element name="planner1" type="xs:string" />
+    			<xs:element name="planner-strategy1" type="xs:string" />
+    			<xs:element name="planner2" type="xs:string" />
+    			<xs:element name="planner-strategy2" type="xs:string" />
+    			<xs:element name="default-look" type="xs:string" />
+    			<xs:element name="look-and-feel" type="xs:string" />
+    			<xs:element name="gant-renderer" type="xs:string" />
+    			<xs:element name="immerse-dialog" type="xs:string" />
+    			<xs:element name="generate-dialog" type="xs:string" />
+    			<xs:element name="language" type="xs:string" />
+    		</xs:all>
+    	</xs:complexType>
+    </xs:element>
+    
+    
+</xs:schema>

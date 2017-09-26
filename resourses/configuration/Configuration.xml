@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ConfigurationSchema.xsd">
+    
+        <renderer>pzks.ui.renderer.PZKSLamaoRenderer</renderer>
+        <queue1>pzks.model.planners.queue.PZKSVariant2QueuePlanner</queue1>
+        <queue2>pzks.model.planners.queue.PZKSVariant9QueuePlanner</queue2>
+        <queue3>pzks.model.planners.queue.PZKSVariant11QueuePlanner</queue3>
+        <storage>resourses/configuration/LamaoResourses.xml</storage>
+        <planner1>pzks.model.planners.assignment.PZKSVariant3AssignmentPlanner</planner1>
+        <planner-strategy1>pzks.model.planners.assignment.PZKSPreactStrategy</planner-strategy1>
+        <planner2>pzks.model.planners.assignment.PZKSVariant5AssignmentPlanner</planner2>
+        <planner-strategy2>pzks.model.planners.assignment.PZKSPreactStrategy</planner-strategy2>
+        <default-look>true</default-look>
+        <look-and-feel>com.nilo.plaf.nimrod.NimRODLookAndFeel</look-and-feel>
+        <gant-renderer>pzks.ui.renderer.PZKSLamaoGantRenderer</gant-renderer>
+        <immerse-dialog>pzks.ui.dialogs.PZKSLamaoImmerseDialog</immerse-dialog>
+        <generate-dialog>pzks.ui.dialogs.PZKSLamaoGenerateDialog</generate-dialog>
+        <language>ua</language>
+        
+</configuration>

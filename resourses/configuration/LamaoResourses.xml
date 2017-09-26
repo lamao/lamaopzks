@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<!DOCTYPE resourses SYSTEM "resourses.dtd">
+<resourses>
+   		<item fill="HORIZONTAL" weightx="100">
+      		<bean id="MenuBar">
+      			<class>javax.swing.JMenuBar</class>
+            
+            	<subitem>
+            		<bean id="part1">
+            			<class>javax.swing.JMenu</class>
+            		
+            			<property>
+      						<name>text</name>
+                			<value><string>##LocalisedFrame.menu.file.title</string></value>
+                		</property>
+                
+                		<subitem>
+                			<bean id="item1">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.file.new.title</string></value>
+                				</property>
+                				
+                				<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/new.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item10">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.file.open.title</string></value>
+                				</property>
+                				
+                				<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/load.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item11">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.file.save.title</string></value>
+                				</property>
+                				
+                				<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/save.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      						</bean>
+      					</subitem>	
+      					
+      				
+      					<subitem>
+                			<bean id="item2">
+            					<class>javax.swing.JSeparator</class>
+            				</bean>
+      					</subitem>	      				
+                
+                		<subitem>
+                			<bean id="item3">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.file.exit.title</string></value>
+                				</property>
+                				
+                				<property>
+                                    <name>actionCommand</name>
+                                    <value><string>Exit</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/exit.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      						</bean>
+      					</subitem>	
+      					
+      				</bean>
+      			</subitem>	
+      		
+      			<subitem>
+      				<bean id="part2">
+      					<class>javax.swing.JMenu</class>
+            		
+            			<property>
+      						<name>text</name>
+                			<value><string>##LocalisedFrame.menu.edit.title</string></value>
+      					</property>
+      					
+      					<subitem>
+                            <bean id="generate_menu_item">
+                                <class>javax.swing.JMenuItem</class>
+                    
+                                <property>
+                                    <name>text</name>
+                                    <value><string>##LocalisedFrame.menu.edit.generate</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>actionCommand</name>
+                                    <value><string>Generate graph</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/generate.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+                        
+                            </bean>
+                        </subitem>
+                        
+                        <subitem>
+                            <bean id="validate_menu_item">
+                                <class>javax.swing.JMenuItem</class>
+                    
+                                <property>
+                                    <name>text</name>
+                                    <value><string>##LocalisedFrame.menu.edit.validate</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>actionCommand</name>
+                                    <value><string>Validate</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/validate.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+                        
+                            </bean>
+                        </subitem>
+                        
+                        <subitem>
+                            <bean id="edit_separator_1">
+                                <class>javax.swing.JSeparator</class>
+                            </bean>
+                        </subitem>
+                        
+      					<subitem>
+                			<bean id="item4">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.edit.addNode.title</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Add Node</string></value>
+      							</property>
+      							
+      							<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/addNode.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item5">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.edit.removeNode.title</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Remove Node</string></value>
+      							</property>
+      							
+      							<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/removeNode.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item6">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.edit.addConnection.title</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Add Connection</string></value>
+      							</property>
+      							
+      							<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/addConnection.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item7">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>##LocalisedFrame.menu.edit.removeConnection.title</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Remove Connection</string></value>
+      							</property>
+      							
+      							<property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/removeConnection.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+                    <bean id = "immerse_menu">
+                        <class>javax.swing.JMenu</class>
+                        <property>
+                            <name>text</name>
+                            <value><string>##LocalisedFrame.menu.immersion.title</string></value>
+                        </property>
+                
+                        <subitem>
+                            <bean id="immerse_menu_item">
+                                <class>javax.swing.JMenuItem</class>
+                    
+                                <property>
+                                    <name>text</name>
+                                    <value><string>##LocalisedFrame.menu.immersion.immerse.title</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>actionCommand</name>
+                                    <value><string>ShowImmerseDialog</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/immerse.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+                            </bean>
+                        </subitem>
+                     </bean>
+                 </subitem>
+                 
+                <subitem>
+                    <bean id = "help_menu">
+                        <class>javax.swing.JMenu</class>
+                        <property>
+                            <name>text</name>
+                            <value><string>##LocalisedFrame.menu.help.title</string></value>
+                        </property>
+                
+                        <subitem>
+                            <bean id="help_menu_item">
+                                <class>javax.swing.JMenuItem</class>
+                    
+                                <property>
+                                    <name>text</name>
+                                    <value><string>##LocalisedFrame.menu.help.about.title</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>actionCommand</name>
+                                    <value><string>About box</string></value>
+                                </property>
+                                
+                                <property>
+                                    <name>icon</name>
+                                    <value>
+                                        <bean url="./resourses/images/lamao/about.gif">
+                                            <class>javax.swing.ImageIcon</class>
+                                        </bean>                                 
+                                    </value>
+                                </property>
+                            </bean>
+                        </subitem>
+                     </bean>
+                 </subitem>
+                 
+     		</bean>
+      	</item>
+   	
+   		<item>
+   			<bean id="ToolBar">
+   				<class>javax.swing.JToolBar</class>
+   				   				
+   				<property>
+      				<name>orientation</name>
+                	<value><int>1</int></value>
+      			</property>
+
+   				<subitem>
+      				<bean id="addNodeButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Add Node</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./resourses/images/lamao/addNode.gif">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      				      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="removeNodeButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Remove Node</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./resourses/images/lamao/removeNode.gif">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="addConnectionButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Add Connection</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./resourses/images/lamao/addConnection.gif">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="removeConnectionButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Remove Connection</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./resourses/images/lamao/removeConnection.gif">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			<subitem>
+      				<bean id="validate">
+      					<class>javax.swing.JButton</class>
+      					<property>
+      						<name>actionCommand</name>
+      						<value>
+      							<string>Validate</string>
+      							
+      						</value>
+      					</property>
+      					<property>
+      						<name>icon</name>
+      						<value>
+      							<bean url="./resourses/images/lamao/validate.gif">
+      								<class>javax.swing.ImageIcon</class>
+      							</bean>
+      							
+      						</value>
+      					</property>
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="queuedialog">
+      					<class>javax.swing.JButton</class>
+      					<property>
+      						<name>actionCommand</name>
+      						<value>
+      							<string>ShowImmerseDialog</string>      							
+      						</value>
+      					</property>
+      					<property>
+      						<name>icon</name>
+      						<value>
+      							<bean url="./resourses/images/lamao/immerse.gif">
+      								<class>javax.swing.ImageIcon</class>
+      							</bean>      							
+      						</value>
+      					</property>
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="generatedialog">
+      					<class>javax.swing.JButton</class>
+      					<property>
+      						<name>actionCommand</name>
+      						<value>
+      							<string>Generate graph</string>      							
+      						</value>
+      					</property>
+      					<property>
+      						<name>icon</name>
+      						<value>
+      							<bean url="./resourses/images/lamao/generate.gif">
+      								<class>javax.swing.ImageIcon</class>
+      							</bean>      							
+      						</value>
+      					</property>
+      				</bean>
+      			</subitem>
+      			
+   			</bean>
+   		</item>
+</resourses>
+      
+      

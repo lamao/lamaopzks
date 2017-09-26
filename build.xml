@@ -1,0 +1,84 @@
+<project name="lamaopzks" basedir="." default="compile">
+	
+<!-- =========== Applicaiton properties ========================= -->
+	<property name="app.name" value="pzks"/>
+
+<!-- =========== Directories ========================= -->
+
+	<property name="buildDir" value="bin/build" />
+	<property name="resDir" value="resourses" />
+	<property name="srcDir" value="src" />	
+	<property name="libDir" value="lib"/>
+	
+<!-- =========== JAR properties ========================= -->
+	<property name="jar.Dir" value="bin/jar" />
+	<property name="jar.name" value="${app.name}.jar" />
+	<property name="jar.mainClass" value="pzks.ui.PZKSMainFrame"/>
+
+<!-- =========== Targets ========================= -->
+	
+	<target name="clean" description="Cleans build directory">
+		<delete includeemptydirs="true">
+			<fileset dir="bin" includes="**/*"/>
+		</delete>
+	</target>
+	
+	<target name="prepare" 
+		description="Prepares directory structure for building">
+		<mkdir dir="${buildDir}" />
+		<mkdir dir="${jar.Dir}"/>
+	</target>
+	
+	<path id="compile.classpath">
+		<fileset dir="${libDir}" includes="*.jar"/>
+	</path>
+	
+	<target name="compile" depends="prepare">
+		<javac srcdir="${srcDir}" 
+				destdir="${buildDir}"
+				source="1.6"
+				target="1.6">
+			<classpath refid="compile.classpath" />
+		</javac>
+		
+	</target>
+	
+	<target name="jar.create" depends="compile">
+		<jar destfile="${jar.Dir}/${jar.name}" basedir="${buildDir}">
+			<manifest>
+				<attribute name="Main-Class" value="${jar.mainClass}"/>
+				<attribute name="Class-Path" value=". lib/nimrodlf-1.0g.jar"/>
+			</manifest>
+		</jar>
+		
+		<copy todir="${jar.Dir}/resourses" >
+				<fileset dir="${resDir}" />
+		</copy>
+		<copy todir="${jar.Dir}/lib" >
+				<fileset file="lib/nimrodlf-1.0g.jar" />
+		</copy>
+		<copy todir="${jar.Dir}">
+		    <fileset file="README.txt" />
+		</copy>
+		
+		<native2ascii src="localization" dest="${jar.Dir}/localization" 
+			includes="**/*.properties"/>
+		
+	</target>
+	
+	<target name="jar.run">
+		<exec executable="java">
+			<arg value="-jar"/>
+			<arg value="${jar.Dir}/${jar.name}"/>
+		</exec>
+	</target>
+	
+	<target name="jar.buildAndRun" depends="jar.create">
+		<exec executable="java">
+			<arg value="-jar"/>
+			<arg value="${jar.Dir}/${jar.name}"/>
+		</exec>
+	</target>
+	
+		
+</project>

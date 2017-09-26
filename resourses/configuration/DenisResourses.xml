@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<!DOCTYPE resourses SYSTEM "resourses.dtd">
+<resourses>
+   		<item fill="HORIZONTAL" weightx="100">
+      		<bean id="MenuBar">
+      			<class>javax.swing.JMenuBar</class>
+            
+            	<subitem>
+            		<bean id="part1">
+            			<class>javax.swing.JMenu</class>
+            		
+            			<property>
+      						<name>text</name>
+                			<value><string>Файл</string></value>
+                		</property>
+                
+                		<subitem>
+                			<bean id="item1">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>создать</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>New</string></value>
+      							</property>
+      							
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item10">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>открыть</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Load</string></value>
+      							</property>
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item11">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>сохранить</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Save</string></value>
+      							</property>
+      							
+      						</bean>
+      					</subitem>	
+      					
+      				
+      					<subitem>
+                			<bean id="item2">
+            					<class>javax.swing.JSeparator</class>
+            				</bean>
+      					</subitem>	      				
+                
+                		<subitem>
+                			<bean id="item3">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>выход</string></value>
+                				</property>
+      						</bean>
+      					</subitem>	
+      			
+      				</bean>
+      			</subitem>	
+      		
+      			<subitem>
+      				<bean id="part2">
+      					<class>javax.swing.JMenu</class>
+            		
+            			<property>
+      						<name>text</name>
+                			<value><string>Правка</string></value>
+      					</property>
+      					
+      					<subitem>
+                			<bean id="item4">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>+ вершина</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Add Node</string></value>
+      							</property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item5">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>- вершина</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Remove Node</string></value>
+      							</property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item6">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>+ связь</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Add Connection</string></value>
+      							</property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      					<subitem>
+                			<bean id="item7">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>- связь</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Remove Connection</string></value>
+      							</property>
+      					
+      						</bean>
+      					</subitem>	
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="part3">
+      					<class>javax.swing.JMenu</class>
+            		
+            			<property>
+      						<name>text</name>
+                			<value><string>Выполнить</string></value>
+      					</property>
+      					
+      					<subitem>
+                			<bean id="item12">
+            					<class>javax.swing.JMenuItem</class>
+            		
+            					<property>
+      								<name>text</name>
+                					<value><string>проверка</string></value>
+                				</property>
+                				
+                				<property>
+      								<name>actionCommand</name>
+                					<value><string>Validate</string></value>
+      							</property>
+      					
+      						</bean>
+      					</subitem>	
+      				</bean>
+      			</subitem>
+     	
+     		</bean>
+      	</item>
+   	
+   		<item>
+   			<bean id="ToolBar">
+   				<class>javax.swing.JToolBar</class>
+   				   				
+   				<property>
+      				<name>orientation</name>
+                	<value><int>1</int></value>
+      			</property>
+
+   				<subitem>
+      				<bean id="addNodeButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Add Node</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./src/images/denis/addNode.png">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      				      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="removeNodeButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Remove Node</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./src/images/denis/removeNode.png">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="addConnectionButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Add Connection</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./src/images/denis/addConnection.png">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="removeConnectionButton">
+      					<class>javax.swing.JButton</class>
+            		
+            			<property>
+      						<name>actionCommand</name>
+                			<value><string>Remove Connection</string></value>
+      					</property>
+      					
+      					<property>
+      						<name>icon</name>
+                			<value>
+                				<bean url = "./src/images/denis/removeConnection.png">
+                					<class>javax.swing.ImageIcon</class>
+                				</bean>
+                			</value>
+      					</property>
+      					
+      				</bean>
+      			</subitem>
+      			
+      			      					
+      			<subitem>
+      				<bean id="validate">
+      					<class>javax.swing.JButton</class>
+      					<property>
+      						<name>actionCommand</name>
+      						<value>
+      							<string>Validate</string>
+      							
+      						</value>
+      					</property>
+      					<property>
+      						<name>icon</name>
+      						<value>
+      							<bean url="./src/images/denis/validate.png">
+      								<class>javax.swing.ImageIcon</class>
+      							</bean>
+      							
+      						</value>
+      					</property>
+      				</bean>
+      			</subitem>
+      			
+      			<subitem>
+      				<bean id="generator">
+      					<class>javax.swing.JButton</class>
+      					<property>
+      						<name>actionCommand</name>
+      						<value>
+      							<string>Generate graph</string>
+      							
+      						</value>
+      					</property>
+      					<property>
+      						<name>icon</name>
+      						<value>
+      							<bean url="./src/images/denis/validate.png">
+      								<class>javax.swing.ImageIcon</class>
+      							</bean>
+      							
+      						</value>
+      					</property>
+      				</bean>
+      			</subitem>
+      			
+      			
+      			
+   			</bean>
+   		</item>
+</resourses>
+      
+      

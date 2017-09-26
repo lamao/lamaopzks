@@ -1,0 +1,19 @@
+<!ELEMENT resourses (item)*>
+
+<!ELEMENT item (bean)>
+<!ATTLIST item weightx CDATA "0">
+<!ATTLIST item weighty CDATA "0">
+<!ATTLIST item fill (NONE|BOTH|HORIZONTAL|VERTICAL) "NONE">
+
+<!ELEMENT bean (class, property*, subitem*)>
+<!ELEMENT subitem (bean)>
+<!ATTLIST bean id ID #IMPLIED>
+<!ATTLIST bean url CDATA #IMPLIED>
+
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT property (name, value)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT value (int|string|boolean|bean)>
+<!ELEMENT int (#PCDATA)>
+<!ELEMENT string (#PCDATA)>
+<!ELEMENT boolean (#PCDATA)>
